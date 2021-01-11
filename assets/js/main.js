@@ -29,7 +29,7 @@ function scrollActive(){
 
     sections.forEach(current =>{
         const sectionHeight = current.offsetHeight
-        const sectionTop = current.offsetTop - 50;
+        const sectionTop = current.offsetTop - 60;
         sectionId = current.getAttribute('id')
 
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
@@ -48,9 +48,9 @@ const sr = ScrollReveal({
     reset: true
 })
 
-sr.reveal('.home__title',{})
+sr.reveal('.home__title',{origin:'left',delay:200})
 sr.reveal('.home__scroll',{delay:200})
-sr.reveal('.home__img',{origin:'right',delay:400})
+sr.reveal('.home__img',{origin:'right',delay:300})
 
 
 
